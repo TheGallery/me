@@ -5,36 +5,22 @@
 }
 
 .project {
-  width: 300px;
-  height: 170px;
+  width: 30%;
+  height: 200px;
+  margin-bottom: 30px;
+}
+
+.project-content {
   border: solid 1px #ccc;
   border-radius: 5px;
-  margin: 10px;
+  height: 170px;
   position: relative;
-  flex: 1 30%;
-  background-position: center;
   background-size: cover;
-  margin-bottom: 30px;
+  background-position: center;
 
   &:hover > .overlay {
     opacity: 1;
     cursor: pointer;
-  }
-
- .title {
-    position: absolute;
-    left: 0;
-    top: -23px;
-    font-size: 23px;
-    color: #828282;
-  }
-
- .show-more {
-    position: absolute;
-    right: 0;
-    top: -23px;
-    font-size: 23px;
-    color: #828282;
   }
 
   a {
@@ -46,9 +32,37 @@
     color: #eee;
     text-decoration: none;
 
+    &:visited {
+      color: #eee;
+    }
+
     &:hover {
+      color: #eee;
       flex: 2;
       box-shadow: inset 1px 1px 10px 2px #525252;
+    }
+  }
+}
+
+.project-header {
+  height: 30px;
+  display: flex;
+  align-items: center;
+
+  >.title {
+    font-size: 23px;
+    color: #828282;
+    flex: 1;
+  }
+
+  >.show-more {
+    font-size: 23px;
+    color: #828282;
+    margin-left: auto;
+    position: relative;
+
+    &:hover > .tooltip {
+      display: block;
     }
   }
 }
@@ -69,4 +83,38 @@
 
 .divider {
   border-right: solid 3px #eee;
+}
+
+.tooltip {
+  display: none;
+  position: absolute;
+  z-index: 999;
+  background: rgba(39, 39, 39, 0.9);
+  right: 0;
+  width: 200px;
+  color: #eee;
+  border-radius: 5px;
+  padding: 5px;
+  box-shadow: 0px 5px 4px -4px #1d1d1d;
+}
+
+
+.tooltip-title {
+  border-bottom: solid 1px #ccc;
+  text-align: center;
+  text-transform: uppercase;
+
+  &::before,
+  &::after {
+    content: "\25CF";
+    font-size: 15px
+  }
+
+  &::before {
+    margin-right: 15px;
+  }
+
+  &::after {
+    margin-left: 15px;
+  }
 }

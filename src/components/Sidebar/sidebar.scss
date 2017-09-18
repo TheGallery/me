@@ -8,7 +8,7 @@
   height: 100vh;
 }
 
-a.website-title {
+.website-title {
   height: 220px;
   font-family: 'Pathway Gothic One', sans-serif;
   color: #eee;
@@ -19,6 +19,10 @@ a.website-title {
   display: block;
   text-decoration: none;
 
+  &:visited {
+    color :#eee;
+  }
+  
   &:hover {
     background-color: #404040;
   }

@@ -3,6 +3,7 @@ import Sidebar from './Sidebar';
 import Intro from './Intro';
 import Technologies from './Technologies';
 import Showroom from './Showroom';
+import Footer from './Footer';
 import './app.css';
 
 function App () {
@@ -13,6 +14,7 @@ function App () {
         <Intro />
         <Technologies />
         <Showroom />
+        <Footer />
       </div>
     </div>
   );
