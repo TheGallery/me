@@ -92,13 +92,13 @@
     ]
   },
   {
-    "name": "File Metadata API",
-    "url" : "https://calm-scrubland-55362.herokuapp.com/",
-    "sourceUrl": "https://github.com/TheGallery/file-metadata-ms",
+    "name": "Simon Game",
+    "url" : "https://codepen.io/TheGallery/full/GvZmNp/",
+    "sourceUrl": "https://codepen.io/TheGallery/pen/GvZmNp/",
     "sourceHost": "github",
-    "img": "filemetadatams.png",
+    "img": "simon.png",
     "technologies": [
-      "NodeJS", "ExpressJS"
+      "jQuery", "HTML5 Audio"
     ]
   },
   {
@@ -119,6 +119,36 @@
     "img": "quotegenerator.png",
     "technologies": [
       "jQuery"
+    ]
+  },
+  {
+    "name": "Abstraction Layer",
+    "url" : "https://floating-wildwood-37090.herokuapp.com/",
+    "sourceUrl": "https://github.com/TheGallery/img-search-abstraction-layer",
+    "sourceHost": "github",
+    "img": "generic.png",
+    "technologies": [
+      "ExpressJS", "NodeJS"
+    ]
+  },
+  {
+    "name": "URL Shortener",
+    "url" : "https://pure-reef-73475.herokuapp.com/",
+    "sourceUrl": "https://github.com/TheGallery/url-shortener-ms",
+    "sourceHost": "github",
+    "img": "generic.png",
+    "technologies": [
+      "ExpressJS", "NodeJS"
+    ]
+  },
+  {
+    "name": "Timestamp Microservice",
+    "url" : "https://sleepy-wildwood-95438.herokuapp.com/",
+    "sourceUrl": "https://github.com/TheGallery/fcc-timestamp-ms",
+    "sourceHost": "github",
+    "img": "generic.png",
+    "technologies": [
+      "ExpressJS", "NodeJS"
     ]
   }
 ]
