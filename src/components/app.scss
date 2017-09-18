@@ -9,7 +9,7 @@
   margin-left: 270px;
   padding: 0 10%;
 
-  > div {
+  > div:not(.footer) {
     min-height: 100vh;
     box-sizing: border-box;
     padding-top: 50px;
@@ -28,4 +28,24 @@
 
 .text-bold {
   font-weight: bold;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 50px;
+  padding-bottom: 20px;
+  color: #595959;
+}
+
+a {
+  color: black;
+
+  &:visited {
+    color: black;
+  }
+
+  &:hover,
+  &:focus {
+    color: #404040;
+  }
 }
