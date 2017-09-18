@@ -1,8 +1,24 @@
+@import '../sass_vars.scss';
+
 .app {
   min-height: 100vh;
-  font-family: 'Rajdhani', sans-serif;
+  font-family: $main-font;
   font-size: 20px;
-  background-color: #eee;
+  background-color: $main-light;
+}
+
+.section-title {
+  font-size: 40px;
+  margin: 20px 0;
+
+  > span {
+    font-size: 30px;
+    color: $dark-lighter;
+  }
+}
+
+.text-bold {
+  font-weight: bold;
 }
 
 .main-content {
@@ -16,36 +32,48 @@
   }
 }
 
-.section-title {
-  font-size: 40px;
-  margin: 20px 0;
+a {
+  color: $main-dark;
 
-  > span {
-    font-size: 30px;
-    color: #787878;
+  &:visited {
+    color: $main-dark;
   }
-}
 
-.text-bold {
-  font-weight: bold;
+  &:hover,
+  &:focus {
+    color: $dark-lighter;
+  }
+
+  &.link-light {
+    color: $main-light;
+
+    &:visited {
+      color: $main-light;
+    }
+
+    &:hover,
+    &:focus {
+      color: #aaa;
+    }
+  }
 }
 
 .footer {
   text-align: center;
   margin-top: 50px;
   padding-bottom: 20px;
-  color: #595959;
+  color: $dark-lighter;
 }
 
-a {
-  color: black;
-
-  &:visited {
-    color: black;
+@media only screen and (max-width: $break-large) {
+  .main-content {
+    margin-left: 220px;
   }
+}
 
-  &:hover,
-  &:focus {
-    color: #404040;
+@media only screen and (max-width: $break-medium) {
+  .main-content {
+    margin-left: 0;
+    padding-top: 60px;
   }
 }

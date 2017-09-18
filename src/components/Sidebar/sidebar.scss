@@ -1,17 +1,19 @@
+@import '../../sass_vars.scss';
+
 .sidebar {
   position: fixed;
   width: 270px;
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  background-color: #272727;
+  background-color: $main-dark;
   height: 100vh;
 }
 
 .website-title {
   height: 220px;
-  font-family: 'Pathway Gothic One', sans-serif;
-  color: #eee;
+  font-family: $secondary-font;
+  color: $main-light;
   text-align: center;
   font-size: 40px;
   padding-top: 15px;
@@ -20,7 +22,7 @@
   text-decoration: none;
 
   &:visited {
-    color :#eee;
+    color :$main-light;
   }
   
   &:hover {
@@ -36,7 +38,7 @@
   z-index: 99;
   margin-left: -20px;
   margin-top: 70px;
-  border: solid 20px #eee;
+  border: solid 20px $main-light;
 }
 
 .sidebar-content {
@@ -45,40 +47,55 @@
 }
 
 
-.nav-links li {
+.nav-links a {
+  display: list-item;
+  text-align: center;
+  font-size: 20px;
+  border-bottom: solid 1px #ccc;
+  padding: 20px 0;
+  text-decoration: none;
+  text-transform: uppercase;
 
   &:first-child {
     border-top: solid 1px #ccc;
   }
 
-  >a {
-    display: list-item;
-    text-align: center;
-    font-size: 20px;
-    border-bottom: solid 1px #ccc;
-    padding: 20px 0;
-    text-decoration: none;
-    text-transform: uppercase;
-    color: #eee;
-
-    &:hover {
-      background-color: #404040;
-    }
+  &:hover {
+    background-color: #404040;
+    cursor: pointer;
   }
-
 }
 
 .social-links {
   margin: 20px 0;
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 
-  li > a {
+  > a:not(:last-child) {
     font-size: 30px;
-    color: #eee;
+  }
 
-    &:hover {
-      color: #aaa;
-    }
+  > a:last-child {
+    flex: 1 100%;
+    margin-top: 10px;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: $break-large) {
+  .sidebar {
+    width: 220px;
+  }
+
+  .avatar {
+    width: 220px;
+    height: 220px;
+  }
+}
+
+@media only screen and (max-width: $break-medium) {
+  .sidebar {
+    display: none;
   }
 }

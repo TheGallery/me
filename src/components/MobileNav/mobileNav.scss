@@ -1,0 +1,53 @@
+@import '../../sass_vars.scss';
+
+.mobile-nav {
+  display: none;
+}
+
+@media only screen and (max-width: $break-medium) {
+  .mobile-nav {
+    background-color: $main-dark;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    font-size: 25px;
+    position: fixed;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 9999;
+
+    a {
+      color: $main-light;
+      text-decoration: none;
+
+      &:visited,
+      &:hover,
+      &:focus {
+        color: $main-light;
+      }
+    }
+
+    >.nav-btn {
+      margin-left: auto;
+    }
+  }
+
+  .nav-links {
+    position: absolute;
+    background: inherit;
+    z-index: 999;
+    top: 50px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    left: 0;
+
+    a {
+      text-align: center;
+      text-transform: uppercase;
+      padding: 20px 0;
+      border-top: solid 1px #ccc;
+    }
+  }
+}

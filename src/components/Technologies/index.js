@@ -11,8 +11,8 @@ function Technologies () {
           data.sort((a, b) => b.exp - a.exp)
             .map(tech => (
               <div>
-                <Scale points={tech.exp} />
                 <div className='skill-name'>{tech.name}</div>
+                <Scale points={tech.exp} />
               </div>
             ))
         }

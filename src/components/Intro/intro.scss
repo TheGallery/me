@@ -1,3 +1,5 @@
+@import '../../sass_vars.scss';
+
 .Intro p {
   margin-top: 50px;
   font-size: 30px;
@@ -11,6 +13,30 @@
   }
 }
 
+@media only screen and (max-width: $break-large) {
+  .Intro p {
+    margin-top: 30px;
+    font-size: 23px;
+  }
+
+  .Intro-header {
+    font-size: 50px;
+
+    >.huge {
+      font-size: 70px;
+    }
+  }
+}
+
+@media only screen and (max-width: $break-medium) {
+  .Intro-header {
+    font-size: 30px;
+  
+    >.huge {
+      font-size: 40px;
+    }
+  }
+}
 
 
 

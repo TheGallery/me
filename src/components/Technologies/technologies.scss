@@ -1,3 +1,5 @@
+@import '../../sass_vars.scss';
+
 .skills-container {
   display: flex;
   flex-wrap: wrap;
@@ -5,46 +7,9 @@
 
   > div {
     display: flex;
-    flex-basis: 50%;
+    flex-basis: 100%;
     align-items: center;
     box-sizing: border-box;
-  }
-
-  > div:nth-child(odd) {
-    justify-content: flex-end;
-
-    &::after {
-      content: "\25CF";
-      margin: 5px;
-    }
-
-    > .skill-name {
-      text-align: right;
-    }
-
-    > .scale {
-      flex-direction: row-reverse;
-    }
-
-    .point {
-      &:last-child {
-        margin-right: 3px;
-      }
-    
-      &:first-child {
-        margin-right: 0;
-      }
-    }
-  }
-
-  > div:nth-child(even) {
-    .skill-name {
-      order: 1;
-    }
-
-    .scale {
-      order: 2
-    }
   }
 }
 
@@ -53,35 +18,35 @@
   margin: 10px;
   display: inline-flex;
   padding: 3px;
-  width: 209px;
+  width: 100%;
 
   &.x4 > .point {
     background: #7aaf7a;
   }
-  
+
   &.x3 > .point {
     background: #79afa6;
 
     &:last-child {
-      background: #eee; 
+      background: #eee;
     }
   }
-    
+
   &.x2 > .point {
     background: #a679af;
 
     &:nth-child(n+3) {
-      background: #eee; 
+      background: #eee;
     }
   }
-    
-  &.x1 > .point:first-child {  
-    background: #af7979; 
+
+  &.x1 > .point:first-child {
+    background: #af7979;
   }
 }
 
 .point {
-  width: 50px;
+  width: 25%;
   height: 20px;
   background: #eee;
   display: inline-block;
@@ -94,13 +59,14 @@
 
 
 .skill-name {
-  flex-basis: 140px;
+  flex: 0 0 140px;
 }
 
 
 .stuff-container {
-  display: inline-block;
+  display: inline-flex;
   font-size: 23px;
+  flex-wrap: wrap;
 
   >a {
     margin-right: 20px;
@@ -114,5 +80,53 @@
     &:focus {
       color: #404040;
     }
+  }
+}
+
+
+@media only screen and (min-width: $break-large) {
+  .skills-container {
+    > div {
+      flex-basis: 50%;
+    }
+
+    > div:nth-child(odd) {
+      justify-content: flex-end;
+
+      > .skill-name {
+        text-align: right;
+        order: 2;
+      }
+
+      > .scale {
+        flex-direction: row-reverse;
+        order: 1;
+      }
+
+      .point {
+        &:last-child {
+          margin-right: 3px;
+        }
+
+        &:first-child {
+          margin-right: 0;
+        }
+      }
+    }
+
+    >div:nth-child(even) {
+      &::before {
+        content: "\25CF";
+        margin: 5px;
+      }
+    }
+  }
+
+  .scale {
+    width: auto;
+  }
+
+  .point {
+    width: 50px;
   }
 }

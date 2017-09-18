@@ -1,3 +1,5 @@
+@import '../../sass_vars.scss';
+
 .projects {
   display: flex;
   flex-wrap: wrap;
@@ -116,5 +118,22 @@
 
   &::after {
     margin-left: 15px;
+  }
+}
+
+
+@media only screen and (max-width: $break-large) {
+  .project {
+    width: 45%;
+  }
+}
+
+@media only screen and (max-width: $break-medium) {
+  .project {
+    width: 100%;
+  }
+
+  .overlay {
+    opacity: 1;
   }
 }
