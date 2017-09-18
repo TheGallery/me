@@ -1,0 +1,118 @@
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 23px;
+
+  > div {
+    display: flex;
+    flex-basis: 50%;
+    align-items: center;
+    box-sizing: border-box;
+  }
+
+  > div:nth-child(odd) {
+    justify-content: flex-end;
+
+    &::after {
+      content: "\25CF";
+      margin: 5px;
+    }
+
+    > .skill-name {
+      text-align: right;
+    }
+
+    > .scale {
+      flex-direction: row-reverse;
+    }
+
+    .point {
+      &:last-child {
+        margin-right: 3px;
+      }
+    
+      &:first-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  > div:nth-child(even) {
+    .skill-name {
+      order: 1;
+    }
+
+    .scale {
+      order: 2
+    }
+  }
+}
+
+.scale {
+  border: solid 1px #d4d4d4;
+  margin: 10px;
+  display: inline-flex;
+  padding: 3px;
+  width: 209px;
+
+  &.x4 > .point {
+    background: #7aaf7a;
+  }
+  
+  &.x3 > .point {
+    background: #79afa6;
+
+    &:last-child {
+      background: #eee; 
+    }
+  }
+    
+  &.x2 > .point {
+    background: #a679af;
+
+    &:nth-child(n+3) {
+      background: #eee; 
+    }
+  }
+    
+  &.x1 > .point:first-child {  
+    background: #af7979; 
+  }
+}
+
+.point {
+  width: 50px;
+  height: 20px;
+  background: #eee;
+  display: inline-block;
+  margin-right: 3px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+
+.skill-name {
+  flex-basis: 140px;
+}
+
+
+.stuff-container {
+  display: inline-block;
+  font-size: 23px;
+
+  >a {
+    margin-right: 20px;
+    color: black;
+
+    &:visited {
+      color: black;
+    }
+
+    &:hover,
+    &:focus {
+      color: #404040;
+    }
+  }
+}

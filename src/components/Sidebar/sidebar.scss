@@ -1,0 +1,80 @@
+.sidebar {
+  position: fixed;
+  width: 270px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background-color: #272727;
+  height: 100vh;
+}
+
+a.website-title {
+  height: 220px;
+  font-family: 'Pathway Gothic One', sans-serif;
+  color: #eee;
+  text-align: center;
+  font-size: 40px;
+  padding-top: 15px;
+  text-transform: uppercase;
+  display: block;
+  text-decoration: none;
+
+  &:hover {
+    background-color: #404040;
+  }
+}
+
+.avatar {
+  position: absolute;
+  height: 270px;
+  width: 270px;
+  border-radius: 50%;
+  z-index: 99;
+  margin-left: -20px;
+  margin-top: 70px;
+  border: solid 20px #eee;
+}
+
+.sidebar-content {
+  flex: 1;
+  padding-top: 160px;
+}
+
+
+.nav-links li {
+
+  &:first-child {
+    border-top: solid 1px #ccc;
+  }
+
+  >a {
+    display: list-item;
+    text-align: center;
+    font-size: 20px;
+    border-bottom: solid 1px #ccc;
+    padding: 20px 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #eee;
+
+    &:hover {
+      background-color: #404040;
+    }
+  }
+
+}
+
+.social-links {
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-around;
+
+  li > a {
+    font-size: 30px;
+    color: #eee;
+
+    &:hover {
+      color: #aaa;
+    }
+  }
+}

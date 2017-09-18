@@ -1,0 +1,72 @@
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.project {
+  width: 300px;
+  height: 170px;
+  border: solid 1px #ccc;
+  border-radius: 5px;
+  margin: 10px;
+  position: relative;
+  flex: 1 30%;
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 30px;
+
+  &:hover > .overlay {
+    opacity: 1;
+    cursor: pointer;
+  }
+
+ .title {
+    position: absolute;
+    left: 0;
+    top: -23px;
+    font-size: 23px;
+    color: #828282;
+  }
+
+ .show-more {
+    position: absolute;
+    right: 0;
+    top: -23px;
+    font-size: 23px;
+    color: #828282;
+  }
+
+  a {
+    flex: 1;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: flex .3s ease-in-out;
+    color: #eee;
+    text-decoration: none;
+
+    &:hover {
+      flex: 2;
+      box-shadow: inset 1px 1px 10px 2px #525252;
+    }
+  }
+}
+
+.overlay {
+  opacity: 0;
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  align-items: stretch;
+  font-size: 70px;
+  transition: opacity .2s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+}
+
+.divider {
+  border-right: solid 3px #eee;
+}

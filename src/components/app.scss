@@ -1,0 +1,31 @@
+.app {
+  min-height: 100vh;
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 20px;
+  background-color: #eee;
+}
+
+.main-content {
+  margin-left: 270px;
+  padding: 0 10%;
+
+  > div {
+    min-height: 100vh;
+    box-sizing: border-box;
+    padding-top: 50px;
+  }
+}
+
+.section-title {
+  font-size: 40px;
+  margin: 20px 0;
+
+  > span {
+    font-size: 30px;
+    color: #787878;
+  }
+}
+
+.text-bold {
+  font-weight: bold;
+}

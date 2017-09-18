@@ -1,0 +1,86 @@
+[
+  {
+    "name": "Instapolls",
+    "url" : "https://instapolls.herokuapp.com",
+    "sourceUrl": "https://github.com/TheGallery/instapolls",
+    "sourceHost": "github",
+    "img": "instapolls.png"
+  },
+  {
+    "name": "Weather App",
+    "url" : "https://codepen.io/TheGallery/full/LLKLKW/",
+    "sourceUrl": "https://codepen.io/TheGallery/pen/LLKLKW",
+    "sourceHost": "codepen",
+    "img": "weatherapp.png"
+  },
+  {
+    "name": "Random Quote Generator",
+    "url" : "https://codepen.io/TheGallery/full/WOqoYE/",
+    "sourceUrl": "https://codepen.io/TheGallery/pen/WOqoYE",
+    "sourceHost": "codepen",
+    "img": "quotegenerator.png"
+  },
+  {
+    "name": "Calculator",
+    "url" : "https://codepen.io/TheGallery/full/NvGXwb/",
+    "sourceUrl": "https://codepen.io/TheGallery/pen/NvGXwb",
+    "sourceHost": "codepen",
+    "img": "calculator.png"
+  },
+  {
+    "name": "Wikipedia Browser",
+    "url" : "https://codepen.io/TheGallery/full/weVOyq/",
+    "sourceUrl": "https://codepen.io/TheGallery/pen/weVOyq",
+    "sourceHost": "codepen",
+    "img": "wikipedia.png"
+  },
+  {
+    "name": "Tic Tac Toe",
+    "url" : "https://codepen.io/TheGallery/full/Bdjxmy/",
+    "sourceUrl": "https://codepen.io/TheGallery/pen/Bdjxmy",
+    "sourceHost": "codepen",
+    "img": "tictactoe.png"
+  },
+  {
+    "name": "Promodoro Clock",
+    "url" : "https://codepen.io/TheGallery/full/YxwwOm/",
+    "sourceUrl": "https://codepen.io/TheGallery/pen/YxwwOm",
+    "sourceHost": "codepen",
+    "img": "promodoro.png"
+  },
+  {
+    "name": "Dungeon Crawler",
+    "url" : "https://codepen.io/TheGallery/full/QMMrov/",
+    "sourceUrl": "https://codepen.io/TheGallery/pen/QMMrov",
+    "sourceHost": "codepen",
+    "img": "roguelike.png"
+  },
+  {
+    "name": "Recipe Box",
+    "url" : "https://codepen.io/TheGallery/full/YxGoXK/",
+    "sourceUrl": "https://codepen.io/TheGallery/pen/YxGoXK",
+    "sourceHost": "codepen",
+    "img": "recipebox.png"
+  },
+  {
+    "name": "The Game of Life",
+    "url" : "https://codepen.io/TheGallery/full/yoVpBQ/",
+    "sourceUrl": "https://codepen.io/TheGallery/pen/yoVpBQ",
+    "sourceHost": "codepen",
+    "img": "gameoflife.png"
+  },
+  {
+    "name": "Markdown Previewer",
+    "url" : "https://codepen.io/TheGallery/full/LjZVrK/",
+    "sourceUrl": "https://codepen.io/TheGallery/pen/LjZVrK",
+    "sourceHost": "codepen",
+    "img": "markdown.png"
+  },
+  {
+    "name": "File Metadata API",
+    "url" : "https://calm-scrubland-55362.herokuapp.com/",
+    "sourceUrl": "https://github.com/TheGallery/file-metadata-ms",
+    "sourceHost": "github",
+    "img": "filemetadatams.png"
+  }
+]

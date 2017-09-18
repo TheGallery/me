@@ -1,6 +1,9 @@
 import React from 'react';
 import Sidebar from './Sidebar';
 import Intro from './Intro';
+import Technologies from './Technologies';
+import Showroom from './Showroom';
+import './app.css';
 
 function App () {
   return (
@@ -8,6 +11,8 @@ function App () {
       <Sidebar />
       <div className='main-content'>
         <Intro />
+        <Technologies />
+        <Showroom />
       </div>
     </div>
   );
