@@ -10,7 +10,7 @@ function Intro () {
       </div>
       <p>
         I am a developer, a contributor, a student, a web enthousiast, a gamer, 
-        a music lover, a whovian from <span className='text-bold'>Greece </span> 
+        a music lover, a Whovian from <span className='text-bold'>Greece </span> 
         seeking to make his passion a living.
       </p>
       <p>
