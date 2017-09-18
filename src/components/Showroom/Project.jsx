@@ -43,7 +43,7 @@ function Tooltip ({technologies}) {
       <div className='tooltip-title'>Built with</div>
       <ul>
         {
-          technologies.map(item => <li>{item}</li>)
+          technologies.map(item => <li key={item}>{item}</li>)
         }
       </ul>
     </div>
