@@ -2,7 +2,7 @@
   "name": "JavaScript",
   "exp": 4
 }, {
-  "name": "Nodejs",
+  "name": "Node.js",
   "exp": 3
 }, {
   "name": "React",
@@ -29,7 +29,7 @@
   "name": "MySQL",
   "exp": 3
 }, {
-  "name": "ExpressJS",
+  "name": "Express.js",
   "exp": 3
 }, {
   "name": "CSS3",
@@ -74,7 +74,7 @@
   "name": "Apache",
   "exp": 1
 }, {
-  "name": "Angular 3",
+  "name": "Angular 2",
   "exp": 1
 }, {
   "name": "Mocha/Chai",
