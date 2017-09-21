@@ -5,7 +5,10 @@ import data from '../../data/skills.json';
 function Technologies () {
   return (
     <div id='technologies'>
-      <h1 className='section-title'>Technologies<span>.Experience</span></h1>
+      <h1 className='section-title'>
+        Technologies <br />
+        <span>.Experience</span>
+      </h1>
       <div className='skills-container'>
         {
           data.sort((a, b) => b.exp - a.exp)
