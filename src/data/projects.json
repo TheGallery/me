@@ -1,5 +1,16 @@
 [
   {
+    "name": "Surupo",
+    "url" : "https://surupo.herokuapp.com",
+    "sourceUrl": "https://github.com/TheGallery/surupo",
+    "sourceHost": "github",
+    "img": "surupo.png",
+    "technologies": [
+      "React", "Redux", "React Router", "NodeJS", "ExpressJS", "PassportJS",
+      "Glamorous", "Mongoose", "Twitter API", "Yelp API"
+    ]
+  },
+  {
     "name": "Voting App",
     "url" : "https://instapolls.herokuapp.com",
     "sourceUrl": "https://github.com/TheGallery/instapolls",
