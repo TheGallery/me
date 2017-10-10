@@ -21,6 +21,15 @@
       "Charts.js", "Semantic UI", "Mongoose", "Twitter API", "Github API",
       "Google API"
     ]
+  },{
+    "name": "Fallout Terminal",
+    "url" : "https://thegallery.github.io/fo-terminal/",
+    "sourceUrl": "https://github.com/TheGallery/fo-terminal",
+    "sourceHost": "github",
+    "img": "fo-terminal.png",
+    "technologies": [
+      "React", "ImmutableJS", "Glamorous"
+    ]
   },
   {
     "name": "Weather App",
